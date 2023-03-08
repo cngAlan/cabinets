@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+<div class="product">
+<a href="home_page.html">Go back to Home page</a>
+  <img src="product-image.jpg" alt="Product Image" width="300" height="200">
+  <h2 class="title">Product Title</h2>
+  <p class="description">Product Description</p>
+<!-- 选择橱柜门品牌 -->
+	<form>
+		<label for="brand">cabinet brand：</label>
+		<select id="brand" name="brand">
+			<option value="brand1">brand 1</option>
+			<option value="brand2">brand 2</option>
+			<option value="brand3">brand 3</option>
+		</select>
+	</form>
+  <p class="price">$19.99</p>
+  <div class="quantity">
+    <label for="width">Width:</label>
+    <input type="number" id="width" name="width" min="0" step="0.1" value="12"> in
+  </div>
+  <div class="quantity">
+    <label for="height">Height:</label>
+    <input type="number" id="height" name="height" min="0" step="0.1" value="8"> in
+  </div>
+  <div class="quantity">
+    <label for="length">Length:</label>
+    <input type="number" id="length" name="length" min="0" step="0.1" value="6"> in
+  </div>
+  <div class="quantity">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+  </div>
+	
+
+	<!-- 选择橱柜门颜色 -->
+	<form>
+		<label for="color">door color：</label>
+		<select id="color" name="color">
+			<option value="color1">color 1</option>
+			<option value="color2">color 2</option>
+			<option value="color3">color 3</option>
+		</select>
+	</form>
+
+  <button class="add-to-cart">Add to Cart</button>
+
+<div class="cart">
+  <h2 class="cart-title">Shopping Cart</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Width (in)</th>
+        <th>Height (in)</th>
+        <th>Length (in)</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Cart items will be dynamically added here -->
+    </tbody>
+  </table>
+  <div class="cart-buttons">
+    <button class="clear-cart">Clear Cart</button>
+  </div>
+  <div class="cart-summary">
+    <p>Total Quantity: <span class="total-quantity">0</span></p>
+    <p>Total Price: <span class="total-price">$0.00</span></p>
+    <button class="checkout" onclick="window.location.href='check_out.html'">Checkout</button>
+  </div>
+</div>
+
+</body>
+</html>
